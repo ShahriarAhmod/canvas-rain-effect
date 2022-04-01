@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Rain Effect</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel = "stylesheet" href = "css/Background.css"/>
+	<script type = "text/javascript" src = "js/jquery.min.js"></script>	
+	<script type = "text/javascript" src="js/RainBackground.js"></script>
+	<script type= "text/javascript">
+		$(document).ready(function(){
+			$(".Background").Background({
+				drops:'700',
+				length : '40',
+				stroke : '2',
+				interval : '100',
+				opacity : '.6',
+				angle : '30',
+				color : 'rgb(256, 256, 256)' //Only In RGB format. don't use #hex or any other color format
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class = "Background">
+		<canvas id = "Background"></canvas>
+	</div>
+</body>
+</html>
